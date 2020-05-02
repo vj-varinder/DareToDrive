@@ -1,0 +1,20 @@
+        1.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        2.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        3.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        coins.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        info.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        next.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        ok.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        pause.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        play.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        prev.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        restart.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        soundOff.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        soundOn.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+        spike2.png https://opengameart.org/content/spikey-stuff Dravenx GPL 3.0
+        coin.png https://opengameart.org/content/gold-coin-0 Tweetfold CC-BY 3.0
+
+        tap.ogg https://opengameart.org/content/interface-sounds-starter-pack p0ss  CC-BY-SA 3.0 - GPL 3.0 - GPL 2.0
+        back_music.ogg https://opengameart.org/content/going-deep section31 CC0 public domain
+        crash.ogg https://opengameart.org/content/punch-slap-n-kick CGEffex CC-BY 3.0
+        coin.ogg  https://opengameart.org/content/picked-coin-echo-2  NenadSimic CC-By 3.0

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no" />
+    <title>D2D: Dare to Drive</title>
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="introtoapps.min.js"></script>
+    <script type="text/javascript" src="mobile_script.js"></script>
+</head>
+
+<body>
+    <!-- the page used for different level's playing screen. -->
+    <div id="playPage" class="page">
+
+        <div id="pauseDiv" class="displayNumber">
+            <img src="images/pause.png" width="50px" height="50px" />
+        </div>
+        <div id="levelNumDiv" class="displayNumber">
+            Level 1
+            <!-- style = "position: absolute; margin-top: 2%; margin-left: 14%; " -->
+        </div>
+
+        <div id="score_div" class="displayNumber">
+            Score <br /><span id="scoreValue">0</span>
+        </div>
+        <div id="help_div" class="displayNumber">
+            <img src="images/info.png" width="50px" height="50px" />
+        </div>
+
+        <div id="coin_div" class="displayNumber">
+            <img src="images/coins.png" width="50px" height="50px" />
+            <span id="coinValue">0</span>
+        </div>
+
+        <!-- Container for road, cars and other objects on
+            the ways of user. -->
+        <div id="container">
+
+            <div id="car" class="car">
+                <div class="f_glass"></div>
+                <div class="b_glass"></div>
+                <div class="f_light_l"></div>
+                <div class="f_light_r"></div>
+                <div class="f_tyre_l"></div>
+                <div class="f_tyre_r"></div>
+                <div class="b_tyre_l"></div>
+                <div class="b_tyre_r"></div>
+            </div>
+            <div id="roadEndLeft" class="roadEnd">
+
+            </div>
+            <div id="roadEndRight" class="roadEnd">
+
+            </div>
+        </div>
+
+        <div id="moveLeft">
+            <img id="moveLeftImg" src="images/prev.png" width="50px" height="50px" class="displayNumber" />
+        </div>
+
+        <div id="moveRight">
+            <img id="moveRightImg" src="images/next.png" width="50px" height="50px" class="displayNumber" />
+        </div>
+
+    </div>
+
+    <!-- Page when user tap on pause or game get over. -->
+
+
+    <div id="gameInteruptPage" class="page ">
+        <center>
+
+        <div id="message" class="displayNumber">
+
+        </div>
+
+        <img id="playButton" src="images/play.png" width="50px" height="50px" class="displayNumber" />
+        <img id="resetButton" src="images/restart.png" width="50px" height="50px" class="displayNumber" />
+        </center>
+    </div>
+
+
+    <!-- Home screen -->
+    <div id="homePage" class="page show">
+
+        <!-- Sounds used in this game. -->
+        <audio id="tap">
+            <source src="sounds/tap.ogg" type="audio/mpeg">
+        </audio>
+        <audio id="crash">
+            <source src="sounds/crash.ogg" type="audio/mpeg">
+        </audio>
+        <audio id="back_music">
+            <source src="sounds/back_music.ogg" type="audio/mpeg">
+        </audio>
+        <audio id="coin">
+            <source src="sounds/coin.wav" type="audio/mpeg">
+        </audio>
+
+        <div class="titlehead">
+            Dare to Drive <br /> D2D
+        </div>
+
+        <!-- play button  -->
+        <div>
+            <h2 id="play" class="displayNumber button"> Play</h2>
+        </div>
+
+        <!-- Help button -->
+        <div>
+            <h2 id="help" class="displayNumber button"> Help</h2>
+        </div>
+
+        <!-- Sound on button -->
+        <div id="soundOn" class="displayNumber">
+            <img src="images/soundOn.png" width="50px" height="50px" />
+        </div>
+
+        <!-- Sound off button -->
+        <div id="soundOff" class="displayNumber">
+            <img src="images/soundOff.png" width="50px" height="50px" />
+        </div>
+
+        <!-- Button for credit page -->
+        <div id="credit" class="displayNumber">
+            
+                Credits &copy;
+
+        </div>
+
+        <div id="developerInfo" class="displayNumber">
+            Developed By: Varinder jit Kaur (217006983)
+        </div>
+    </div>
+
+    <!-- Licencse and showning credit page. -->
+    <div id="licensePage" class="page">
+        <h2 style="text-align:center"> Credits Page</h2>
+        <p id="creditlink" style="overflow:auto;width:350px; height:500px">
+            1.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> 2.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> 3.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> coins.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> info.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> next.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> ok.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> pause.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> play.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> prev.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> restart.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> soundOff.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> soundOn.png https://opengameart.org/content/crazy-blue-icons Dalenryder CC0 Public Domain
+            <br /><br /> spike2.png https://opengameart.org/content/spikey-stuff Dravenx GPL 3.0
+            <br /><br /> coin.png https://opengameart.org/content/gold-coin-0 Tweetfold CC-BY 3.0
+
+            <br /><br /> tap.ogg https://opengameart.org/content/interface-sounds-starter-pack p0ss  CC-BY-SA 3.0 - GPL 3.0 - GPL 2.0
+            <br /><br /> back_music.ogg https://opengameart.org/content/going-deep section31 CC0 public domain
+            <br /><br /> crash.ogg https://opengameart.org/content/punch-slap-n-kick CGEffex CC-BY 3.0
+            <br /><br /> coin.ogg  https://opengameart.org/content/picked-coin-echo-2  NenadSimic CC-By 3.0
+
+        </p>
+        <div id="creditOk" class="displayNumber">
+            <img src="images/ok.png" width="50px" height="50px" />
+        </div>
+    </div>
+
+    <!-- Menu page for different Level of game -->
+    <div id="menuPage" class="page">
+
+        <div id="backButton" class="displayNumber">
+            <img src="images/prev.png" width="50px" height="50px" />
+        </div>
+        <div>
+
+            <h2 id="beginner" class="displayNumber button"> Beginner</h2>
+        </div>
+        <div>
+            <h2 id="moderate" class="displayNumber button"> Moderate</h2>
+
+        </div>
+        <div>
+            <h2 id="expert" class="displayNumber button"> Expert</h2>
+
+        </div>
+    </div>
+
+    <!-- Help page -->
+    <div id="helpPage" class="page">
+        <h1>Instructions for playing</h1>
+        <h2>This game has three levels</h2>
+
+        <ol>
+            <li>
+                Beginner
+                <ul>
+                    <li>
+                        This level would have traffic.
+                    </li>
+                    <li>
+                        User can tap on left part to move left.
+                    </li>
+                    <li>
+                        User can tap on right part to move right.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Moderate
+                <ul>
+                    <li>
+                        This level would have traffic and coins.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Expert
+                <ul>
+                    <li>
+                        This level would have traffic, coins and spikes.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <div id="helpOk" class="displayNumber">
+            <img src="images/ok.png" width="50px" height="50px" />
+        </div>
+    </div>
+
+</body>
+
+</html>
